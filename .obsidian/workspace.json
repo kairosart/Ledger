@@ -1,0 +1,382 @@
+{
+  "main": {
+    "id": "b737129de1630734",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae5f4984e1054cc2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef33df5b7e2d6168",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "0489b4047e7afef7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ENUMERATION/Nmap.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Nmap"
+            }
+          },
+          {
+            "id": "f66fd0d31530c85c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ENUMERATION/LDAP Enumeration (anonymous bind).md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "LDAP Enumeration (anonymous bind)"
+            }
+          },
+          {
+            "id": "df3bc20a0bc6ed2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "3f03c7ee3b1ae88a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ENUMERATION/Ports 25 and 587.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Ports 25 and 587"
+            }
+          },
+          {
+            "id": "d285428726c27836",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EXPLOITATION/Force the username list against SMB.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Force the username list against SMB"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1c93e62aea9f6a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc33873873c43585",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dff4c984d79ec35a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5d66f4ee62eb718a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1559b2d65fbdd0d4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4540409740734342",
+    "type": "split",
+    "children": [
+      {
+        "id": "3761a01c90cfacc0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb52b450ee7246e3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "lucide-ghost",
+              "title": "backlink"
+            }
+          },
+          {
+            "id": "b577b01619fcdf0e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "4d156503abb7a334",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8d517934d5e4190e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ENUMERATION/LDAP Enumeration (anonymous bind).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of LDAP Enumeration (anonymous bind)"
+            }
+          },
+          {
+            "id": "4f06e16daf57dee2",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_nodes"
+            }
+          },
+          {
+            "id": "de986d41e305ffd0",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_style"
+            }
+          },
+          {
+            "id": "6e2a1b44d979edef",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_nodes"
+            }
+          },
+          {
+            "id": "bb6d5b294cc45830",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_style"
+            }
+          },
+          {
+            "id": "24c9f1a742457b00",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_nodes"
+            }
+          },
+          {
+            "id": "60232469b2670274",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "juggl_style"
+            }
+          },
+          {
+            "id": "18f41dc5828a4b48",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "9ff3ce883be1de44",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "juggl:Juggl global graph": false,
+      "webpage-html-export:Export Vault to HTML": false,
+      "oz-clear-unused-images:Clear Unused Images": false
+    }
+  },
+  "active": "f66fd0d31530c85c",
+  "lastOpenFiles": [
+    "images/LDAP Enumeration (anonymous bind)-20250826200238345.webp",
+    "ENUMERATION/Nmap.md",
+    "ENUMERATION/LDAP Enumeration (anonymous bind).md",
+    "index.md",
+    "ENUMERATION",
+    "images",
+    "images/Screenshot from 2025-08-26 19-44-01.png",
+    "EXPLOITATION/RDP.md",
+    "EXPLOITATION/SMB shares.md",
+    "EXPLOITATION/Force the username list against SMB.md",
+    "ENUMERATION/Ports 25 and 587.md",
+    "ENUMERATION/Web server.md",
+    "EXPLOITATION/Hmailserver.md",
+    "docs/lib/metadata.json",
+    "docs/lib/media/6155340132a851f6089e.svg",
+    "docs/lib/media",
+    "docs/lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "docs/lib/fonts/05b618077343fbbd92b7.ttf",
+    "docs/lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "docs/lib/fonts/454577c22304619db035.ttf",
+    "docs/lib/fonts/70cc7ff27245e82ad414.ttf",
+    "docs/lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "docs/images/Web server-20250824200008349.webp",
+    "docs/images/SMB shares-20250825192059685.webp",
+    "docs/images/RDP-20250825200427716.webp",
+    "docs/images/RDP-20250825193234301.webp",
+    "docs/images/Ports 25 and 587-20250824205731053.webp",
+    "docs/images/Ports 25 and 587-20250824205553180.webp",
+    "docs/images/Ports 25 and 587-20250824204235261.webp",
+    "docs/images/Nmap-20250822201410758.webp",
+    "README.md",
+    "EXPLOITATION/Flag Submission.md",
+    "PRIVILEGE ESCALATION/Sing user privileges.md",
+    "PRIVILEGE ESCALATION/Getting root.md",
+    "PWND/Find the passwords.md",
+    "EXPLOITATION/Reverse Shell.md",
+    "EXPLOITATION/SMB testing.md",
+    "ENUMERATION/Smb.md",
+    "ENUMERATION/FTP Server.md",
+    "ENUMERATION/Ports under 1024.md",
+    "ENUMERATION/Web Server.md",
+    "EXPLOITATION/Enumeration.md",
+    "EXPLOITATION/Getting a shell and flag 2.md",
+    "PRIVILEGE ESCALATION/Admin shell and Third Flag.md",
+    "Index.md",
+    "ENUMERATION/Enumeration.md"
+  ]
+}
