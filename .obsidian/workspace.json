@@ -44,7 +44,7 @@
               "type": "markdown",
               "state": {
                 "file": "ENUMERATION/LDAP Enumeration (anonymous bind).md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
@@ -330,11 +330,13 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "f66fd0d31530c85c",
+  "active": "dff4c984d79ec35a",
   "lastOpenFiles": [
-    "images/LDAP Enumeration (anonymous bind)-20250826200238345.webp",
+    "images/LDAP Enumeration (anonymous bind)-20250827120647811.webp",
+    "images/LDAP Enumeration (anonymous bind)-20250827120059091.webp",
     "ENUMERATION/Nmap.md",
     "ENUMERATION/LDAP Enumeration (anonymous bind).md",
+    "images/LDAP Enumeration (anonymous bind)-20250826200238345.webp",
     "index.md",
     "ENUMERATION",
     "images",
@@ -360,8 +362,6 @@
     "docs/images/RDP-20250825193234301.webp",
     "docs/images/Ports 25 and 587-20250824205731053.webp",
     "docs/images/Ports 25 and 587-20250824205553180.webp",
-    "docs/images/Ports 25 and 587-20250824204235261.webp",
-    "docs/images/Nmap-20250822201410758.webp",
     "README.md",
     "EXPLOITATION/Flag Submission.md",
     "PRIVILEGE ESCALATION/Sing user privileges.md",

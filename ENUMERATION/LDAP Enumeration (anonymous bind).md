@@ -21,7 +21,7 @@
 That’s what happened here — your `ldapsearch` worked but returned a **referral** instead of direct data.
 
 
-## Running
+## 🔹Running
 
 #Attacking_machine
 
@@ -61,51 +61,117 @@ So the important discovery here is:
 
 Even if some attributes are restricted, **knowing the domain structure** helps in brute-forcing, Kerberos attacks (`kerbrute`, `GetNPUsers.py`), or laterally moving with valid creds.
 
+> [!NOTICE]
+> ### LDAP (`ldapsearch`) doesn’t know the domain
+
+- When you connect to **LDAP by IP**, it only gives you referrals or errors if you don’t bind correctly.
+    
+- Without proper **base DN** or credentials, you only get **referrals**, which may include outdated or placeholder names (`labyrinth.local`).
+    
+- LDAP relies on either:
+    
+    1. **Correct base DN** (`DC=thm,DC=local`)
+        
+    2. **DNS to resolve the server’s FQDN** for referrals
+        
+- If you guessed the wrong domain (`labyrinth.local`), you get **“referral” errors** pointing to a domain that doesn’t exist in your lab.
 
 ---
+
+## SMB (`nxc`) knows the “right” domain
+
+- When you connect to **SMB**, the Windows host responds with its **NetBIOS and Active Directory domain** in the initial handshake.
+    
+- Tools like `nxc` or `crackmapexec` parse this handshake and show the **actual domain name** (`thm.local` in your case).
+    
+- You don’t need DNS for this — the server tells you directly. 
+
+#Attacking_machine 
+Run the following code to know the real domain:
+```
+nxc smb <MACHINE IP> -u "" -p "" --shares
+```
+
+![[LDAP Enumeration (anonymous bind)-20250827120059091.webp]]
+
+### Analysis
+
+1. **SMB is up** on 445 and the host is running Windows 10 / Server 2019.
+    
+2. Domain name is `thm.local` — note it’s different from `labyrinth.local`**. This explains why your previous Kerberos attempts failed.
+    
+3. `STATUS_ACCESS_DENIED` means your current session **doesn’t have privileges to enumerate shares** (null session is blocked, or SMB signing prevents it).
 
 ## /etc/hosts
 
 - Add this to `/etc/hosts` so your tools resolve the FQDN:
     
-    `10.10.37.10   labyrinth.local labyrinth`
-    
-- Re-run ldapsearch against the domain name instead of IP:
-    
-    `ldapsearch -x -H ldap://labyrinth.local -b "DC=labyrinth,DC=local"`
-    
-- If anonymous access is still partially open, you’ll start seeing accounts and groups.
+    `<MACHINE IP>   `thm.local` LABYRINTH`
 
-## What the LDAP output means
+## kerbrute  against domain
 
-`result: 10 Referral ref: ldap://labyrinth.local/DC=labyrinth,DC=local`
+- Re-run kerbrute against the domain name instead of IP:
+-
+```
+kerbrute userenum --dc 10.10.180.0 -d thm.local /usr/share/seclists/Usernames/top-usernames-shortlist.txt
+```
 
-- `result: 10 Referral` → The LDAP server didn’t give you objects, it told you to look elsewhere.
-    
-- **Referral** means: _“Don’t query me by IP, use the proper domain controller address.”_
-    
-- The referral is pointing to:
-    
-    `ldap://labyrinth.local/DC=labyrinth,DC=local`
-    
-- That reveals two important things:
-    
-    - The **Active Directory domain name**: `labyrinth.local`
-        
-    - The **base DN** for queries: `DC=labyrinth,DC=local`
-        
+![[LDAP Enumeration (anonymous bind)-20250827120647811.webp]]
+
+You’ve successfully discovered **valid AD usernames** on the domain `thm.local`:
+
+`guest@thm.local 
+`administrator@thm.local`
 
 ---
 
-### ⚡ Why this matters
+### 🔹 What this means
 
-Even though you only got a referral, you now know:
+1. `guest` and `administrator` accounts exist  in Active Directory.
+    
+2. These are **valid accounts** that can be used for further attacks:
+    
+    - Password spraying
+        
+    - SMB login
+        
+    - LDAP queries
+        
+    - Kerberos attacks (AS-REP roasting, if preauth is disabled)
+        
+3. Since you now know the  correct domain (`thm.local`),  you can retry LDAP or Kerberos enumeration with these usernames.
 
-1. ✅ The AD domain name → `labyrinth.local`
+
+---
+### LDAP error
+
+However, if you try to run:
+```
+ldapsearch -x \
+ -H ldap://10.10.180.0 \
+ -D "thm.local\administrator" \
+ -w "123456" \
+ -b "DC=thm,DC=local" \
+ "(objectClass=user)" \
+ sAMAccountName
+```
+
+You got an error:
+`ldap_bind: Invalid credentials (49) additional info: 80090308: LdapErr: DSID-0C090439, comment: AcceptSecurityContext error, data 52e`
+
+### What it means
+
+- **Error 49 / data 52e** → **invalid username or password** for LDAP bind.
     
-2. ✅ The server’s hostname (from earlier nmap) → `LABYRINTH`
-    
-3. ✅ LDAP is running, and **anonymous bind works** (at least partially).
+- Even though `nxc` confirmed the credentials work for SMB (`administrator:123456`), Windows can have **different restrictions per service**:
     
 
-This is the first real foothold into enumerating Active Directory.
+1. The `administrator` account is **restricted from logging in remotely via LDAP**.
+    
+2. Guest accounts almost always cannot bind via LDAP.
+    
+3. SMB and LDAP often have **independent authentication rules**.
+    
+
+So, your current creds **cannot be used for LDAP enumeration**.
+
