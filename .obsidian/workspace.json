@@ -13,21 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "0489b4047e7afef7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "ENUMERATION/Nmap.md",
                 "mode": "source",
                 "source": false,
@@ -38,18 +23,33 @@
             }
           },
           {
-            "id": "f66fd0d31530c85c",
+            "id": "0489b4047e7afef7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ENUMERATION/LDAP Enumeration (anonymous bind).md",
+                "file": "ENUMERATION/NXC.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "LDAP Enumeration (anonymous bind)"
+              "title": "NXC"
+            }
+          },
+          {
+            "id": "f66fd0d31530c85c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PRIVILEGE ESCALATION/User's privileges.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "User's privileges"
             }
           },
           {
@@ -58,43 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "EXPLOITATION/RDP (First flag).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "3f03c7ee3b1ae88a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ENUMERATION/Ports 25 and 587.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Ports 25 and 587"
-            }
-          },
-          {
-            "id": "d285428726c27836",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "EXPLOITATION/Force the username list against SMB.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "Force the username list against SMB"
+              "title": "RDP (First flag)"
             }
           }
         ],
@@ -219,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ENUMERATION/LDAP Enumeration (anonymous bind).md",
+                "file": "PRIVILEGE ESCALATION/User's privileges.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LDAP Enumeration (anonymous bind)"
+              "title": "Outline of User's privileges"
             }
           },
           {
@@ -332,16 +302,26 @@
   },
   "active": "dff4c984d79ec35a",
   "lastOpenFiles": [
+    "images/User's privileges-20250828121752118.webp",
+    "ENUMERATION/NXC.md",
+    "PRIVILEGE ESCALATION/User's privileges.md",
+    "EXPLOITATION/Attack Path.md",
+    "EXPLOITATION/RDP (First flag).md",
+    "PRIVILEGE ESCALATION",
+    "images/RDP-20250828120145783.webp",
+    "images/RDP-20250828120054593.webp",
+    "images/RDP-20250828120045176.webp",
+    "index.md",
+    "ENUMERATION/Nmap.md",
+    "images/Attack Path-20250828114016695.webp",
+    "EXPLOITATION",
+    "images/Nmap-20250828103146229.webp",
     "images/LDAP Enumeration (anonymous bind)-20250827120647811.webp",
     "images/LDAP Enumeration (anonymous bind)-20250827120059091.webp",
-    "ENUMERATION/Nmap.md",
-    "ENUMERATION/LDAP Enumeration (anonymous bind).md",
     "images/LDAP Enumeration (anonymous bind)-20250826200238345.webp",
-    "index.md",
     "ENUMERATION",
     "images",
     "images/Screenshot from 2025-08-26 19-44-01.png",
-    "EXPLOITATION/RDP.md",
     "EXPLOITATION/SMB shares.md",
     "EXPLOITATION/Force the username list against SMB.md",
     "ENUMERATION/Ports 25 and 587.md",
@@ -354,14 +334,6 @@
     "docs/lib/fonts/05b618077343fbbd92b7.ttf",
     "docs/lib/fonts/52ac8f3034507f1d9e53.ttf",
     "docs/lib/fonts/454577c22304619db035.ttf",
-    "docs/lib/fonts/70cc7ff27245e82ad414.ttf",
-    "docs/lib/fonts/535a6cf662596b3bd6a6.woff2",
-    "docs/images/Web server-20250824200008349.webp",
-    "docs/images/SMB shares-20250825192059685.webp",
-    "docs/images/RDP-20250825200427716.webp",
-    "docs/images/RDP-20250825193234301.webp",
-    "docs/images/Ports 25 and 587-20250824205731053.webp",
-    "docs/images/Ports 25 and 587-20250824205553180.webp",
     "README.md",
     "EXPLOITATION/Flag Submission.md",
     "PRIVILEGE ESCALATION/Sing user privileges.md",
@@ -375,8 +347,6 @@
     "ENUMERATION/Web Server.md",
     "EXPLOITATION/Enumeration.md",
     "EXPLOITATION/Getting a shell and flag 2.md",
-    "PRIVILEGE ESCALATION/Admin shell and Third Flag.md",
-    "Index.md",
-    "ENUMERATION/Enumeration.md"
+    "PRIVILEGE ESCALATION/Admin shell and Third Flag.md"
   ]
 }
