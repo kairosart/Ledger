@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ENUMERATION/NXC.md",
+                "file": "PRIVILEGE ESCALATION/Exploiting ESC1 vulnerable template.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "NXC"
+              "title": "Exploiting ESC1 vulnerable template"
             }
           },
           {
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PRIVILEGE ESCALATION/User's privileges.md",
+                "file": "PRIVILEGE ESCALATION/Exploiting ESC1 vulnerable template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of User's privileges"
+              "title": "Outline of Exploiting ESC1 vulnerable template"
             }
           },
           {
@@ -300,13 +300,15 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "dff4c984d79ec35a",
+  "active": "0489b4047e7afef7",
   "lastOpenFiles": [
-    "images/User's privileges-20250828121752118.webp",
-    "ENUMERATION/NXC.md",
     "PRIVILEGE ESCALATION/User's privileges.md",
+    "PRIVILEGE ESCALATION/Exploiting ESC1 vulnerable template.md",
+    "PRIVILEGE ESCALATION/Exploitation with Certipy.md",
     "EXPLOITATION/Attack Path.md",
+    "ENUMERATION/NXC.md",
     "EXPLOITATION/RDP (First flag).md",
+    "images/User's privileges-20250828121752118.webp",
     "PRIVILEGE ESCALATION",
     "images/RDP-20250828120145783.webp",
     "images/RDP-20250828120054593.webp",
@@ -328,7 +330,6 @@
     "ENUMERATION/Web server.md",
     "EXPLOITATION/Hmailserver.md",
     "docs/lib/metadata.json",
-    "docs/lib/media/6155340132a851f6089e.svg",
     "docs/lib/media",
     "docs/lib/fonts/4bb6ac751d1c5478ff3a.woff2",
     "docs/lib/fonts/05b618077343fbbd92b7.ttf",
@@ -346,7 +347,6 @@
     "ENUMERATION/Ports under 1024.md",
     "ENUMERATION/Web Server.md",
     "EXPLOITATION/Enumeration.md",
-    "EXPLOITATION/Getting a shell and flag 2.md",
-    "PRIVILEGE ESCALATION/Admin shell and Third Flag.md"
+    "EXPLOITATION/Getting a shell and flag 2.md"
   ]
 }
