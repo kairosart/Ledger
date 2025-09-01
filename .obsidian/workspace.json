@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ENUMERATION/Nmap.md",
+                "file": "PRIVILEGE ESCALATION/User's privileges.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nmap"
+              "title": "User's privileges"
             }
           },
           {
@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PRIVILEGE ESCALATION/User's privileges.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "User's privileges"
+              "title": "index"
             }
           },
           {
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -189,13 +189,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PRIVILEGE ESCALATION/Exploiting ESC1 vulnerable template.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Exploiting ESC1 vulnerable template"
+              "title": "Outline of index"
             }
           },
           {
@@ -300,21 +300,22 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0489b4047e7afef7",
+  "active": "f66fd0d31530c85c",
   "lastOpenFiles": [
-    "PRIVILEGE ESCALATION/User's privileges.md",
+    "PRIVILEGE ESCALATION/RDP logging as NEWADMINISTRATOR.md",
+    "EXPLOITATION/RDP (First flag).md",
     "PRIVILEGE ESCALATION/Exploiting ESC1 vulnerable template.md",
-    "PRIVILEGE ESCALATION/Exploitation with Certipy.md",
+    "PRIVILEGE ESCALATION/User's privileges.md",
     "EXPLOITATION/Attack Path.md",
     "ENUMERATION/NXC.md",
-    "EXPLOITATION/RDP (First flag).md",
+    "ENUMERATION/Nmap.md",
+    "PRIVILEGE ESCALATION/Exploitation with Certipy.md",
     "images/User's privileges-20250828121752118.webp",
     "PRIVILEGE ESCALATION",
     "images/RDP-20250828120145783.webp",
     "images/RDP-20250828120054593.webp",
     "images/RDP-20250828120045176.webp",
     "index.md",
-    "ENUMERATION/Nmap.md",
     "images/Attack Path-20250828114016695.webp",
     "EXPLOITATION",
     "images/Nmap-20250828103146229.webp",
@@ -346,7 +347,6 @@
     "ENUMERATION/FTP Server.md",
     "ENUMERATION/Ports under 1024.md",
     "ENUMERATION/Web Server.md",
-    "EXPLOITATION/Enumeration.md",
-    "EXPLOITATION/Getting a shell and flag 2.md"
+    "EXPLOITATION/Enumeration.md"
   ]
 }

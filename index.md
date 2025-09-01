@@ -6,3 +6,5 @@ Can you find all the flags?
 
 **Note:** The VM takes about 5 minutes to fully boot up. All the necessary tools are already available on the AttackBox.
 
+## Steps
+
