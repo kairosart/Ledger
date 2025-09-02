@@ -8,3 +8,11 @@ Can you find all the flags?
 
 ## Steps
 
+1. [[Nmap]]
+2. [[NXC]]
+3. [[Attack Path]]
+4. [[RDP (First flag)]]
+5. [[User's privileges]]
+6. [[Exploiting ESC1 vulnerable template]]
+7. [[RDP logging as NEWADMINISTRATOR]]
+
